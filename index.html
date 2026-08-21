@@ -1278,6 +1278,8 @@
   els.verticalSelect.addEventListener('change', ()=>{
     els.bizName.value = '';
     els.leadNegocio.value = '';
+    saveAppointments([]);
+    if(els.calendarDrawer.classList.contains('open')) renderCalendar();
   });
 
   function digitsOnly(s){
